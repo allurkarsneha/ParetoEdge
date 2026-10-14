@@ -1,0 +1,26 @@
+{
+    "FP32": {
+        "model_size_mb": 8.506,
+        "mean_latency_ms": 9.263,
+        "median_latency_ms": 9.157,
+        "p95_latency_ms": 9.594,
+        "inference_runs": 100,
+        "device": "Mac local CPU",
+        "execution_provider": "CPUExecutionProvider",
+        "intra_op_threads": 1
+    },
+    "INT8": {
+        "model_size_mb": 2.491,
+        "mean_latency_ms": 5.225,
+        "median_latency_ms": 5.146,
+        "p95_latency_ms": 5.537,
+        "inference_runs": 100,
+        "device": "Mac local CPU",
+        "execution_provider": "CPUExecutionProvider",
+        "intra_op_threads": 1
+    },
+    "comparison": {
+        "size_reduction_percent": 70.71,
+        "latency_speedup": 1.773
+    }
+}

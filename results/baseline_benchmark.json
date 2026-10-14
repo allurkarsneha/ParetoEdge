@@ -1,0 +1,9 @@
+{
+    "model": "MobileNetV2 FP32",
+    "model_size_mb": 8.506,
+    "mean_latency_ms": 4.345,
+    "median_latency_ms": 4.234,
+    "p95_latency_ms": 5.017,
+    "benchmark_device": "Mac local CPU",
+    "inference_runs": 50
+}

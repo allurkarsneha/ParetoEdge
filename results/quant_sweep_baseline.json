@@ -1,0 +1,74 @@
+[
+  {
+    "name": "baseline_int8_minmax_100",
+    "method": "minmax",
+    "calib_size": 100,
+    "keep_first_last_fp32": false,
+    "accuracy": 0.9829629629629629,
+    "worst_class_accuracy": 0.9475,
+    "worst_class": "Pasture",
+    "size_mb": 2.4909753799438477,
+    "latency_ms": 5.111785984991002,
+    "peak_ram_mb": 76.265625
+  },
+  {
+    "name": "baseline_int8_minmax_500",
+    "method": "minmax",
+    "calib_size": 500,
+    "keep_first_last_fp32": false,
+    "accuracy": 0.9822222222222222,
+    "worst_class_accuracy": 0.94,
+    "worst_class": "Pasture",
+    "size_mb": 2.490992546081543,
+    "latency_ms": 5.165934534925327,
+    "peak_ram_mb": 76.265625
+  },
+  {
+    "name": "baseline_int8_minmax_1000",
+    "method": "minmax",
+    "calib_size": 1000,
+    "keep_first_last_fp32": false,
+    "accuracy": 0.9851851851851852,
+    "worst_class_accuracy": 0.965,
+    "worst_class": "Pasture",
+    "size_mb": 2.4909753799438477,
+    "latency_ms": 5.195926460073679,
+    "peak_ram_mb": 76.125
+  },
+  {
+    "name": "baseline_int8_percentile_500",
+    "method": "percentile",
+    "calib_size": 500,
+    "keep_first_last_fp32": false,
+    "accuracy": 0.9881481481481481,
+    "worst_class_accuracy": 0.96,
+    "worst_class": "PermanentCrop",
+    "size_mb": 2.490915298461914,
+    "latency_ms": 5.883970199756732,
+    "peak_ram_mb": 76.703125
+  },
+  {
+    "name": "baseline_int8_minmax_500_fp32ends",
+    "method": "minmax",
+    "calib_size": 500,
+    "keep_first_last_fp32": true,
+    "accuracy": 0.9851851851851852,
+    "worst_class_accuracy": 0.97,
+    "worst_class": "AnnualCrop",
+    "size_mb": 2.5282135009765625,
+    "latency_ms": 5.88844985486503,
+    "peak_ram_mb": 76.65625
+  },
+  {
+    "name": "baseline_int8_entropy_200",
+    "method": "entropy",
+    "calib_size": 200,
+    "keep_first_last_fp32": false,
+    "accuracy": 0.9844444444444445,
+    "worst_class_accuracy": 0.96,
+    "worst_class": "Pasture",
+    "size_mb": 2.4909839630126953,
+    "latency_ms": 7.77609749999101,
+    "peak_ram_mb": 76.421875
+  }
+]

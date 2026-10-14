@@ -1,0 +1,168 @@
+{
+  "model": "results/student_fp32.onnx",
+  "size_mb": 8.506294250488281,
+  "params_million": 2.219626,
+  "macs_giga": 0.299507072,
+  "peak_ram_mb": 89.3125,
+  "ram_details": {
+    "peak_rss_mb": 89.3125,
+    "idle_rss_mb": 45.875,
+    "ru_maxrss_mb": 89.875
+  },
+  "latency_ms": 8.957661670101515,
+  "latency_details": {
+    "mean_ms": 8.957661670101515,
+    "median_ms": 8.927895498345606,
+    "p95_ms": 9.313669101175037
+  },
+  "accuracy": 0.9933333333333333,
+  "worst_class_accuracy": 0.964,
+  "worst_class": "PermanentCrop",
+  "per_class_accuracy": {
+    "AnnualCrop": 0.995,
+    "Forest": 0.9983333333333333,
+    "HerbaceousVegetation": 0.9916666666666667,
+    "Highway": 1.0,
+    "Industrial": 1.0,
+    "Pasture": 0.99,
+    "PermanentCrop": 0.964,
+    "Residential": 1.0,
+    "River": 0.99,
+    "SeaLake": 1.0
+  },
+  "confusion_matrix": [
+    [
+      597,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      599,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      595,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      500,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      500,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      2,
+      0,
+      0,
+      396,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      14,
+      0,
+      0,
+      1,
+      482,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      600,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      495,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      600
+    ]
+  ],
+  "evaluated_images": 5400,
+  "joules_per_inference": 0.10804083088731677,
+  "energy_runs": 2104,
+  "codecarbon_mode": "tdp_estimate",
+  "codecarbon_cpu_mode": "cpu_load",
+  "settings": {
+    "threads": 1,
+    "split": "val_split.json",
+    "latency_runs": 200,
+    "energy_seconds": 20,
+    "onnxruntime": "1.31.0"
+  },
+  "measurement_machine": "Apple M4, 16 GB, Darwin 25.5.0, CPU only"
+}

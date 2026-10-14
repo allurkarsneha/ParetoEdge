@@ -1,0 +1,164 @@
+{
+  "model": "results/quant_sweep/baseline/baseline_int8_minmax_500.onnx",
+  "size_mb": 2.490992546081543,
+  "params_million": 2.219626,
+  "macs_giga": 0.299507072,
+  "peak_ram_mb": 76.265625,
+  "ram_details": {
+    "peak_rss_mb": 76.265625,
+    "idle_rss_mb": 45.71875,
+    "ru_maxrss_mb": 76.828125
+  },
+  "latency_ms": 5.165934534925327,
+  "latency_details": {
+    "mean_ms": 5.165934534925327,
+    "median_ms": 5.156166502274573,
+    "p95_ms": 5.27908569711144
+  },
+  "accuracy": 0.9822222222222222,
+  "worst_class_accuracy": 0.94,
+  "worst_class": "Pasture",
+  "per_class_accuracy": {
+    "AnnualCrop": 0.9716666666666667,
+    "Forest": 0.9966666666666667,
+    "HerbaceousVegetation": 0.9716666666666667,
+    "Highway": 0.996,
+    "Industrial": 1.0,
+    "Pasture": 0.94,
+    "PermanentCrop": 0.968,
+    "Residential": 0.9983333333333333,
+    "River": 0.99,
+    "SeaLake": 0.98
+  },
+  "confusion_matrix": [
+    [
+      583,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      598,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      5,
+      583,
+      0,
+      0,
+      9,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      498,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      500,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      17,
+      2,
+      0,
+      0,
+      376,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      12,
+      0,
+      1,
+      0,
+      484,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      599,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      495,
+      0
+    ],
+    [
+      2,
+      6,
+      2,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      588
+    ]
+  ],
+  "evaluated_images": 5400,
+  "settings": {
+    "threads": 1,
+    "split": "val_split.json",
+    "latency_runs": 200,
+    "energy_seconds": 20,
+    "onnxruntime": "1.31.0"
+  },
+  "measurement_machine": "Apple M4, 16 GB, Darwin 25.5.0, CPU only"
+}

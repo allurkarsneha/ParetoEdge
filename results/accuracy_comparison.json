@@ -1,0 +1,49 @@
+{
+    "FP32": {
+        "accuracy_percent": 99.1,
+        "worst_class_recall_percent": 93.55,
+        "per_class_recall_percent": {
+            "AnnualCrop": 100.0,
+            "Forest": 100.0,
+            "HerbaceousVegetation": 99.08,
+            "Highway": 98.53,
+            "Industrial": 100.0,
+            "Pasture": 98.7,
+            "PermanentCrop": 93.55,
+            "Residential": 100.0,
+            "River": 100.0,
+            "SeaLake": 100.0
+        },
+        "evaluated_images": 1000
+    },
+    "INT8": {
+        "accuracy_percent": 97.8,
+        "worst_class_recall_percent": 93.51,
+        "per_class_recall_percent": {
+            "AnnualCrop": 97.0,
+            "Forest": 97.46,
+            "HerbaceousVegetation": 95.41,
+            "Highway": 98.53,
+            "Industrial": 100.0,
+            "Pasture": 93.51,
+            "PermanentCrop": 96.77,
+            "Residential": 100.0,
+            "River": 100.0,
+            "SeaLake": 98.29
+        },
+        "evaluated_images": 1000
+    },
+    "comparison": {
+        "accuracy_drop_percentage_points": 1.3
+    },
+    "evaluation_details": {
+        "dataset": "EuroSAT",
+        "split": "Provisional random subset, NOT official validation split",
+        "seed": 42,
+        "sample_size": 1000,
+        "excluded_calibration_indices": [
+            0,
+            199
+        ]
+    }
+}

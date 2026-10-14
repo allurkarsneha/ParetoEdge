@@ -1,0 +1,19 @@
+# Environment and caches
+edge-ai-env/
+__pycache__/
+.DS_Store
+
+# Dataset (download with download_data.py) and organizer-provided checkpoints
+data/
+models/
+
+# Regenerable experiment outputs (scripts rebuild these); keep the small JSON results
+results/**/*.onnx
+results/*.pt
+results/*.log
+results/pruned/
+results/mixed_precision/
+results/quant_sweep/
+
+# Packaged copy of submission/
+ParetoEdge_submission.zip

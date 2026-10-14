@@ -1,0 +1,29 @@
+{
+  "team_name": "ParetoEdge",
+  "baseline": {
+    "accuracy": 0.99333,
+    "params_million": 2.21963,
+    "size_mb": 8.50629,
+    "macs_giga": 0.29951,
+    "latency_ms": 8.95766,
+    "peak_ram_mb": 89.3125,
+    "joules_per_inference": 0.10804
+  },
+  "final": {
+    "accuracy": 0.98815,
+    "params_million": 2.21963,
+    "size_mb": 2.49092,
+    "macs_giga": 0.29951,
+    "latency_ms": 5.16357,
+    "peak_ram_mb": 77.70312,
+    "joules_per_inference": 0.05902
+  },
+  "worst_class_accuracy": 0.96,
+  "codecarbon_mode": "tdp_estimate",
+  "techniques_applied": [
+    "static QDQ INT8 quantization (per-channel weights, Percentile calibration, 500 stratified train images)"
+  ],
+  "ai_hub_profile_summary": "Not run: Qualcomm AI Hub token was not configured in time; all figures are local ONNX Runtime measurements (PDF Section 7 allows local substitution).",
+  "measurement_machine": "Apple M4, 16 GB, Darwin 25.5.0, CPU only; ONNX Runtime CPUExecutionProvider, 1 intra-op thread",
+  "notes": "Organizers did not provide val_split.json; we used a seeded (42) stratified 80/20 split, included. Baseline and final measured identically with measure.py on the same machine."
+}
